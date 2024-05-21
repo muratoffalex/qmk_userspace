@@ -72,7 +72,11 @@ const uint16_t PROGMEM thumbcombos_fun[] = {KC_SPC, KC_TAB, COMBO_END};
 
 // const uint16_t PROGMEM qw_left_brace[] = {LGUI_T(KC_A), LALT_T(KC_S), COMBO_END};
 // const uint16_t PROGMEM qw_right_brace[] = {LALT_T(KC_S), LCTL_T(KC_D), COMBO_END};
+const uint16_t PROGMEM qw_esc[] = {KC_W, KC_E, COMBO_END};
+const uint16_t PROGMEM qw_esc_num[] = {TD(U_TD_U_TAP), TD(U_TD_U_EXTRA), COMBO_END};
 combo_t key_combos[] = {
+    COMBO(qw_esc, LT(U_MEDIA,KC_ESC)),
+    COMBO(qw_esc, KC_ESC),
     // COMBO(qw_left_brace, KC_LBRC),
     // COMBO(qw_right_brace, KC_RBRC),
     #if defined (MIRYOKU_KLUDGE_THUMBCOMBOS)
@@ -86,7 +90,6 @@ combo_t key_combos[] = {
       COMBO(thumbcombos_fun, KC_APP)
     #endif
 };
-
 
 // shift functions
 // key_overrides
