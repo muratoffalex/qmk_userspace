@@ -93,12 +93,12 @@ combo_t key_combos[] = {
 
 // shift functions
 // key_overrides
-const key_override_t capsword_key_override = ko_make_basic(MOD_MASK_SHIFT, CW_TOGG, KC_CAPS);
-
-const key_override_t **key_overrides = (const key_override_t *[]){
-    &capsword_key_override,
-    NULL
-};
+// const key_override_t capsword_key_override = ko_make_basic(MOD_MASK_SHIFT, CW_TOGG, KC_CAPS);
+//
+// const key_override_t **key_overrides = (const key_override_t *[]){
+//     &capsword_key_override,
+//     NULL
+// };
 
 // caps word
 bool caps_word_press_user(uint16_t keycode) {
